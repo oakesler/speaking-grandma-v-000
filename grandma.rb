@@ -1,9 +1,9 @@
 
 def speak_to_grandma(phrase)
-  if phrase.match(/[A-Z]/) == nil
+  upper = phrase.upcase
+  if phrase != upper
     return "HUH?! SPEAK UP, SONNY!"
-    return "HUH?! SPEAK UP, SONNY!"
-  elsif phrase.match(/[a-z]/) == nil
+  elsif phrase == upper
     return "NO, NOT SINCE 1938!"
   elsif phrase == "I LOVE YOU GRANDMA!"
     return "I LOVE YOU TOO PUMPKIN!"
